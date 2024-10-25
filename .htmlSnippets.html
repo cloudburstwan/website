@@ -1,0 +1,21 @@
+<!-- 
+  Break announcement
+  Uses Show tags to hide the content (custom tag) to hide certain text as well as the entire thing when break is over.
+  Used for when going on holiday or other known breaks
+-->
+<show until="2024-05-29T22:00:00+01:00">
+  <section class="container">
+    <div class="border-3 shadow-sm rounded-3 bg-warning-subtle border-warning-subtle row p-2 d-flex">
+      <div class="text-container">
+      <h3>I am<show until="2024-05-22T02:00:00+01:00"> going</show> on a break<show until="2024-05-22T02:00:00+01:00"> soon</show>!</h3>
+      <h6>By the way, the times here are synced to your timezone!</h6>
+      <noscript>
+          <h6>... If you had JavaScript enabled, but since you don't they're in UTC.</h6>
+      </noscript>
+      Between the <time datetime="2024-05-22T02:00:00+01:00" format="full_12">22nd of May 2024 at 1am</time> and the <time datetime="2024-05-29T22:00:00+01:00" format="full_12">29th of May 2024 at 9pm</time>, I am visiting some family members I don't get to see often!<br/>
+      This'll mean my activity will be lower than usual and it may take longer to reach me.<br/>
+      I will reply when I can, but do expect responses to take longer than usual, especially on the exact days listed above (not any days between) as I'll be travelling on those days.
+      </div>
+    </div>
+  </section>
+</show>
