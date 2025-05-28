@@ -27,11 +27,8 @@
 <!-- TODO: I'm thinking it'd be fun to add pictures of my VRC avatar onto the website? -->
 <Foreground />
 <Background> <!--TODO: Not sure what to do for a background. Maybe a solid background?-->
-    <Header status="info">
+    <Header status="info" href="https://example.com/">
         <Time format="DD MTH yyyy at hh:mm:ss"/> - Example alert header
-        <div slot="detail">
-
-        </div>
     </Header>
     <Hero>
         <Avatar size="12.5%" slot="avatar" />
