@@ -1,10 +1,17 @@
-﻿<img class="foreground" src="/images/foreground-peek.png" alt="peek"/>
+﻿<div>&nbsp;</div>
 
 <style>
-    img {
+    div {
         position: fixed;
         bottom: 0;
         right: 30px;
         z-index: 99;
+        width: 100px;
+        height: 78px;
+        background-image: url("/images/foreground-peek.png");
+    }
+
+    div:hover {
+        background-image: url("/images/foreground-peek-hover.png");
     }
 </style>
