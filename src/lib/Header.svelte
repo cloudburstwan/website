@@ -1,21 +1,44 @@
-﻿<script>
-    import HeaderNav from "$lib/HeaderNav.svelte";
+﻿<script lang="ts">
+    export let status: "hidden" | "info" | "warning" | "danger" = "info";
+
+    let color = "rgba(206, 186, 255, 0.68)"
+    let textColor = "rgba(0,0,0,1)";
+
+    switch (status) {
+        case "warning":
+            color = "rgba(255,244,116,0.68)";
+            break;
+        case "danger":
+            color = "rgba(255,186,186,0.68)";
+            break;
+        case "hidden":
+            color = "rgba(0,0,0,0)";
+            break;
+        case "info":
+        default:
+            color = "rgba(206, 186, 255, 0.68)";
+            break;
+    }
+
+    if (status == "hidden")
+        textColor = "rgba(0,0,0,0)";
 </script>
 
-<header class="justify-content-center py-0" id="top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-        <HeaderNav />
-    </nav>
-</header>
+<div style="background-color: {color} !important; color: {textColor} !important;" id="top">
+    <slot>&nbsp;</slot>
+    <slot name="detail"></slot>
+</div>
 
 <style>
-    header nav {
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0.5rem 0;
-        background-color: rgba(248, 249, 250, 1) !important;
+    div {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: calc(100vw - 10px);
+        padding: 10px;
+        background-color: rgba(206, 186, 255, 0.68) !important;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
     }
 </style>
