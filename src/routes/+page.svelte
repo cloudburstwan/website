@@ -1,4 +1,6 @@
 <script>
+    export const prerender = true;
+
     import Header from "$lib/Header.svelte";
     import Time from "$lib/Time.svelte";
     import Subtitles from "$lib/Subtitles.svelte";
