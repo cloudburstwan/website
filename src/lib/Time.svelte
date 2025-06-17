@@ -34,7 +34,7 @@
         .replace("MTH", months[fullTime.getMonth()])
         .replace("MT", months[fullTime.getMonth()].substring(0,3))
         .replace("yyyy", fullTime.getFullYear().toString())
-        .replace("hh", Math.floor(fullTime.getHours() / 2).toString())
+        .replace("hh", Math.floor(fullTime.getHours() > 12 ? fullTime.getHours() - 12 : fullTime.getHours()).toString())
         .replace("HH", addLeadingZero(fullTime.getHours(), 1))
         .replace("mm", addLeadingZero(fullTime.getMinutes(), 1))
         .replace("ss", addLeadingZero(fullTime.getSeconds(), 1))
@@ -66,13 +66,13 @@
     }
 </script>
 
-<span>{localTime}</span>
+<span title="{fullTime.toString()}">{localTime}</span>
 <!-- TODO: Tooltip on hover -->
 
 <style>
     span {
-        padding: 3px;
-        background-color: rgba(100, 100, 100, 0.1);
+        padding: 5px 7px;
+        background-color: rgba(100, 100, 100, 0.34);
         border-radius: 10px;
     }
 </style>

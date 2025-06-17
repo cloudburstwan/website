@@ -10,8 +10,4 @@
         height: 78px;
         background-image: url("/images/foreground-peek.png");
     }
-
-    div:hover {
-        background-image: url("/images/foreground-peek-hover.png");
-    }
 </style>

@@ -1,13 +1,9 @@
 ﻿<div>
-    <img class="background" src="/images/header_bg.png" width="1920" height="616" alt="Background" />
+    <img class="background" src="/images/header_bg.png" width="1920" height="590" alt="Background" />
     <slot></slot>
 </div>
 
 <style>
-    div {
-        color: white;
-    }
-
     img {
         position: absolute;
         top: 0;

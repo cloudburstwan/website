@@ -1,8 +1,8 @@
 ﻿<script lang="ts">
     export let status: "hidden" | "info" | "warning" | "danger" = "info";
 
-    let color = "rgba(206, 186, 255, 0.68)"
-    let borderColor = "rgba(102, 93, 128, 0.68)"
+    let color = "rgba(206, 186, 255, 0.38)"
+    let borderColor = "rgba(102, 93, 128, 0.38)"
     let hidden: boolean | "" | "until-found" | null | undefined = "";
 
     switch (status) {
@@ -16,8 +16,8 @@
             break;
         case "info":
         default:
-            color = "rgba(206, 186, 255, 0.68)";
-            borderColor = "rgba(102, 93, 128, 0.68)";
+            color = "rgba(206, 186, 255, 0.38)";
+            borderColor = "rgba(102, 93, 128,0.38)";
             break;
     }
 
@@ -37,13 +37,13 @@
         position: absolute;
         top: 5px;
         left: 5px;
-        width: calc(100vw - 10px);
-        background-color: rgba(206, 186, 255, 0.68) !important;
-        border: solid 2px rgba(102, 93, 128, 0.68);
+        width: calc(100vw - 30px);
+        background-color: rgba(206, 186, 255, 0.38) !important;
+        border: solid 2px rgba(102, 93, 128, 0.38);
         border-radius: 20px;
         text-align: center;
         font-weight: bolder;
-        color: black;
+        color: #f4f4f4;
     }
 
     header .content {
@@ -52,12 +52,12 @@
 
     a {
         display: block;
-        border-top: solid 2px rgba(102, 93, 128, 0.68);
+        border-top: solid 2px rgba(102, 93, 128, 0.38);
         width: 100%;
         font-size: 1em !important;
         text-decoration: none !important;
         background: transparent;
-        color: black;
+        color: rgb(200, 200, 230);
         font-family: inherit;
         font-weight: inherit;
         cursor: pointer;
