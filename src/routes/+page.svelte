@@ -36,7 +36,7 @@
 <!-- TODO: This became website V2, so this'll be fun -->
 <!-- TODO: I'm thinking it'd be fun to add pictures of my VRC avatar onto the website? -->
 <Foreground />
-<HeaderContainer> <!--TODO: Not sure what to do for a background. Maybe a solid background?-->
+<HeaderContainer>
     <Header status="warning">
         <Time date="2025-06-23" time="01:30:00" tz="+01:00" format="DD MTH yyyy at hh:mm ap"/> - Going on holiday, may be unavailable at times
     </Header>
